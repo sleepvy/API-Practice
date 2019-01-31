@@ -1,0 +1,125 @@
+<!--
+Vy Le
+A project to explore the use of the DarkSky API
+documentation at https://darksky.net/dev/docs
+
+- gets current weather data in Boulder, Colorado
+- parse the JSON file for desired data
+-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link href="weather.css" type="text/css" rel="stylesheet" />
+    <!--    Import fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,900" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1 class="ml1">
+        <span class="text-wrapper">
+    <span class="line line1"></span>
+        <span class="letters">WEATHER FORECAST</span>
+        <span class="line line2"></span>
+        </span>
+    </h1>
+
+    <div id="desc_container">
+        <h2 id="desc">A project exploring the use of APIs, JSON files, JavaScript, and JQuery by <a href="http://creative.colorado.edu/~vyle7651/">  Vy Le.</a>  Click on a location to toggle between the daily and current forecast. </h2>
+
+    </div>
+
+
+    <div id="weather_cont">
+        <div class="row">
+            <div class="column">
+                <div id="boulder_button">
+                    <h2>Boulder</h2>
+                    <canvas id="icon2" width="128" height="128"></canvas>
+                    <p id="daily_summary">refreshing</p>
+                </div>
+
+                <div id="boulder_button2">
+                    <h2>Right now in Boulder</h2>
+                    <canvas id="icon1" width="128" height="128"></canvas>
+                    <p id="summary">refreshing</p>
+                    <p id="results">refreshing</p>
+                    <p id="feelsLike">refreshing</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div id="denver_button">
+                    <h2>Denver</h2>
+                    <canvas id="icon3" width="128" height="128"></canvas>
+                    <p id="den_daily">refreshing</p>
+                </div>
+
+                <div id="denver_button2">
+                    <h2>Right now in Denver</h2>
+                    <canvas id="den_icon2" width="128" height="128"></canvas>
+                    <p id="den_summary">refreshing</p>
+                    <p id="den_results">refreshing</p>
+                    <p id="den_feelsLike">refreshing</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="column">
+
+                <div id="ont_button">
+                    <h2>Ontario</h2>
+                    <canvas id="icon4" width="128" height="128"></canvas>
+                    <p id="ont_daily">refreshing</p>
+                </div>
+
+                <div id="ont_button2">
+                    <h2>Right now in Ontario</h2>
+                    <canvas id="ont_icon2" width="128" height="128"></canvas>
+                    <p id="ont_summary">refreshing</p>
+                    <p id="ont_results">refreshing</p>
+                    <p id="ont_feelsLike">refreshing</p>
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div id="abq_button">
+                    <h2>Albuquerque</h2>
+                    <canvas id="icon5" width="128" height="128"></canvas>
+                    <p id="abq_daily">refreshing</p>
+                </div>
+
+                <div id="abq_button2">
+                    <h2>Right now in Albuquerque</h2>
+                    <canvas id="abq_icon2" width="128" height="128"></canvas>
+                    <p id="abq_summary">refreshing</p>
+                    <p id="abq_results">refreshing</p>
+                    <p id="abq_feelsLike">refreshing</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+        <br> <a href="https://darksky.net/poweredby/">Powered by Dark Sky</a>
+        <br>
+
+    <script src="http://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="skycons-master/skycons.js"></script>
+    <script src="weatherjs.js"></script>
+    <script src="title.js"></script>
+
+
+</body>
+
+</html>
